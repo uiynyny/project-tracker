@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ItemDetailFragment">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <RelativeLayout
+            android:id="@+id/info_holder"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etCourseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:hint="@string/course_title"
+                android:inputType="textAutoComplete" />
+
+            <EditText
+                android:id="@+id/etCourseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCourseTitle"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:hint="@string/course_number" />
+
+            <EditText
+                android:id="@+id/etInstructorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCourseNumber"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:hint="@string/instructor_name"
+                android:inputType="textAutoComplete" />
+
+            <EditText
+                android:id="@+id/etProjectNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etInstructorName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:hint="@string/project_number"
+                android:inputType="number" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@id/info_holder"
+            android:layout_toRightOf="@id/info_holder">
+
+            <Button
+                android:id="@+id/date_pick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="30dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="Due Date"
+                android:singleLine="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/date_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_pick"
+                android:layout_margin="4dp"
+                android:gravity="right" />
+
+            <Switch
+                android:id="@+id/complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_left"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="4dp"
+                android:text="Completed?" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:layout_margin="@dimen/text_margin"
+        android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/project_description"
+            android:inputType="textMultiLine" />
+    </ScrollView>
+
+</RelativeLayout>

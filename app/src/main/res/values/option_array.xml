@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="options">
+        <item>Due in two days</item>
+        <item>Completed</item>
+        <item>In Completed</item>
+        <item>Clear</item>
+    </array>
+</resources>

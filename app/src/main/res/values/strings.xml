@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Project Tracker</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="course_title">Course Title</string>
+    <string name="course_number">Course Number</string>
+    <string name="instructor_name">Instructor Name</string>
+    <string name="project_number">Project Number</string>
+    <string name="project_description">Project Description</string>
+    <string name="dateFormat">yyyy-MM-dd</string>
+    <string name="passDue">PASSED DUE</string>
+    <string name="newProject">New project</string>
+    <string name="dueDate">Due data</string>
+    <string name="complete">Complete</string>
+    <string name="deadlineNotification">{0} days {1} hours left</string>
+    <string name="Loading">Loading...</string>
+    <string name="item_import">Import</string>
+    <string name="export">export</string>
+    <string name="project_uid">uid</string>
+    <string name="about">About</string>
+    <string name="filter">Filter</string>
+</resources>

@@ -1,0 +1,19 @@
+{
+    "tracker": {
+        "awscloudformation": {
+            "AuthRoleName": "projecttracker-20190322111233-authRole",
+            "UnauthRoleArn": "arn:aws:iam::903527477929:role/projecttracker-20190322111233-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::903527477929:role/projecttracker-20190322111233-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "projecttracker-20190322111233-deployment",
+            "UnauthRoleName": "projecttracker-20190322111233-unauthRole",
+            "StackName": "projecttracker-20190322111233",
+            "StackId": "arn:aws:cloudformation:us-east-1:903527477929:stack/projecttracker-20190322111233/eb493ae0-4cb4-11e9-abcc-12069a319f62"
+        },
+        "categories": {
+            "auth": {
+                "cognito7f28e105": {}
+            }
+        }
+    }
+}
